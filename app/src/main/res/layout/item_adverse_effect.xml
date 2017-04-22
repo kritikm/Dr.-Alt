@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_item_layout"
+              android:elevation="@dimen/dim_4_dp"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:clickable="true"
+              android:background="?android:attr/selectableItemBackground"
+              android:layout_height="120dp">
+
+    <View
+        android:id="@+id/v_risk_indicator"
+        android:layout_width="@dimen/dim_20_dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_details"
+        android:padding="@dimen/dim_5_dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_reactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_18_sp"
+            android:text="@string/placeholder_reactions"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dim_10_dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_seriousness"
+                android:textStyle="bold"
+                android:textSize="@dimen/dim_15_sp"/>
+
+            <TextView
+                android:id="@+id/tv_serious"
+                android:layout_marginStart="@dimen/dim_3_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_risks"
+                android:textSize="@dimen/dim_15_sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_drugs"
+            android:layout_marginTop="@dimen/dim_10_dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:id="@+id/ll_suspected_drug"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dim_15_sp"
+                    android:textStyle="bold"
+                    android:text="@string/placeholder_suspected"/>
+
+                <TextView
+                    android:id="@+id/tv_suspected_drug"
+                    android:layout_marginTop="@dimen/dim_5_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dim_15_sp"
+                    android:text="@string/placeholder_suspected_drug"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_additional_drug"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_additional_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/placeholder_additional"
+                    android:textSize="@dimen/dim_15_sp"/>
+
+                <TextView
+                    android:id="@+id/tv_additional_drug"
+                    android:layout_marginTop="@dimen/dim_5_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dim_15_sp"
+                    android:text="@string/placeholder_additional_drug"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Dr. Alt</string>
+    <string name="search">Search for a medicinal compound</string>
+    <string name="placeholder_reactions">Reaction 1, Reaction 2...</string>
+    <string name="placeholder_seriousness">Seriousness</string>
+    <string name="placeholder_risks">Ghano serious</string>
+    <string name="placeholder_suspected">Suspected</string>
+    <string name="placeholder_action">Action</string>
+    <string name="placeholder_suspected_drug">Suspected Drug</string>
+    <string name="placeholder_additional">Additional</string>
+    <string name="placeholder_additional_drug">Additional Drug</string>
+
+    <string name="seriousness_death">The patient died</string>
+    <string name="seriousness_hospitalisation">The patient had to be hospitalised</string>
+    <string name="seriousness_disability">The reaction left the patient disabled</string>
+    <string name="seriousness_life_threatening">The reaction was life threatening</string>
+    <string name="seriousness_other">The reaction was serious</string>
+    <string name="seriousness_none">The reaction wasn\'t serious</string>
+    <string name="toolbar_title">Title</string>
+    <string name="holder_threat">Threat</string>
+    <string name="holder_reaction_details">Reaction:Resolved</string>
+    <string name="holder_reactions">Reactions</string>
+    <string name="outcomes">Outcomes</string>
+    <string name="drugs">Drugs</string>
+    <string name="actions">Actions</string>
+    <string name="not_available">Not Available</string>
+    <string name="no_results_found">No Results Found</string>
+    <string name="patient">Patient</string>
+    <string name="patient_info">Patient Info</string>
+</resources>

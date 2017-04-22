@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:elevation="@dimen/dim_4_dp"
+                android:padding="@dimen/dim_5_dp"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+
+    <EditText
+        android:id="@+id/et_search_text"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:visibility="gone"
+        android:drawableStart="@drawable/vector_search_light"
+        android:drawablePadding="@dimen/dim_10_dp"
+        android:textSize="@dimen/dim_20_sp"
+        android:hint="@string/search"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40_dp"/>
+
+    <TextView
+        android:id="@+id/tv_search_starter"
+        android:paddingStart="@dimen/dim_10_dp"
+        android:paddingEnd="@dimen/dim_10_dp"
+        android:drawableStart="@drawable/vector_search_light"
+        android:drawablePadding="@dimen/dim_10_dp"
+        android:text="@string/search"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:textSize="@dimen/dim_20_sp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_40_dp"/>
+
+
+</RelativeLayout>

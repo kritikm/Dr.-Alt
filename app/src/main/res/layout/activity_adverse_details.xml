@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kritik.dralt.Activity.AdverseDetailsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_title"
+        android:elevation="@dimen/dim_8_dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_60_dp">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_threat"
+                android:drawablePadding="@dimen/dim_4_dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:elevation="@dimen/dim_4_dp"
+                android:padding="@dimen/dim_8_dp"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/vector_info_black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50_dp"
+                android:text="@string/holder_threat"
+                android:textSize="@dimen/dim_15_sp"
+                android:textColor="@android:color/black"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_patient"
+                android:layout_margin="@dimen/dim_8_dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/dim_8_dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/patient"
+                        android:textSize="@dimen/dim_20_sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_1_dp"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:id="@+id/tv_patient_info"
+                        android:layout_marginTop="@dimen/dim_4_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/patient_info"
+                        android:textSize="@dimen/dim_17_sp"/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_drugs"
+                android:layout_margin="@dimen/dim_8_dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/dim_8_dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drugs"
+                        android:textSize="@dimen/dim_20_sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_1_dp"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:id="@+id/tv_drug_info"
+                        android:layout_marginTop="@dimen/dim_4_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/drugs"
+                        android:textSize="@dimen/dim_17_sp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_outcomes"
+                android:layout_margin="@dimen/dim_8_dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/dim_8_dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/holder_reactions"
+                        android:textSize="@dimen/dim_20_sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_1_dp"
+                        android:background="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:id="@+id/tv_outcomes"
+                        android:layout_marginTop="@dimen/dim_4_dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/holder_reactions"
+                        android:textSize="@dimen/dim_17_sp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
